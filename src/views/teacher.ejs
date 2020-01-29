@@ -1,0 +1,38 @@
+<h1>Teacher</h1>
+
+<p><%= message %></p>
+
+<form action="/school" method="GET">
+    <button type="submit">Go School</button>
+</form>
+
+<h2>Add</h2>
+<form action="/school/teacher" method="POST">
+    <div>
+        <label for="add_name">Name</label>
+        <input type="text" id="add_name" name="name" required>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Update</h2>
+<form action="/school/teacher?_method=PUT" method="POST">
+    <div>
+        <label for="up_id">ID</label>
+        <input type="text" id="up_id" name="id" required>
+    </div>
+    <div>
+        <label for="up_name">Name</label>
+        <input type="text" id="up_name" name="name" required>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Delete</h2>
+<form action="/school/teacher?_method=DELETE" method="POST">
+    <div>
+        <label for="del_id">ID</label>
+        <input type="text" id="del_id" name="id" required>
+    </div>
+    <button type="submit">Submit</button>
+</form>
