@@ -2,10 +2,10 @@
   "name": "nodejs--school",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "dev": "nodemon ./src/app.js",
-    "start": "node ./src/app.js",
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
   },
@@ -13,12 +13,21 @@
   "author": "Oleksandr_Shchipkov",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.2.5",
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.8.10",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.0"
+    "eslint-plugin-import": "^2.20.0",
+    "nodemon": "^2.0.2"
   }
 }
