@@ -1,0 +1,70 @@
+<h1>Lesson</h1>
+
+<p><%= message %></p>
+
+<form action="/school" method="GET">
+    <button type="submit">Go School</button>
+</form>
+
+<h2>Add</h2>
+<form action="/school/lesson" method="POST">
+    <div>
+        <label for="add_theme">Theme</label>
+        <input type="text" id="add_theme" name="theme" required>
+    </div>
+    <div>
+        <label for="add_auditorium">Auditorium</label>
+        <input type="text" id="add_auditorium" name="auditorium" required>
+    </div>
+    <div>
+        <label for="add_number_of_lesson">Number of lesson</label>
+        <input type="text" id="add_number_of_lesson" name="number_of_lesson" required>
+    </div>
+    <div>
+        <label for="add_teacher">Teacher</label>
+        <input type="text" id="add_teacher" name="teacher" required>
+    </div>
+    <div>
+        <label for="add_group">Group</label>
+        <input type="text" id="add_group" name="group" required>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Update</h2>
+<form action="/school/lesson?_method=PUT" method="POST">
+    <div>
+        <label for="up_id">ID</label>
+        <input type="text" id="up_id" name="id" required>
+    </div>
+    <div>
+        <label for="up_theme">Theme</label>
+        <input type="text" id="up_theme" name="theme">
+    </div>
+    <div>
+        <label for="up_auditorium">Auditorium</label>
+        <input type="text" id="up_auditorium" name="auditorium">
+    </div>
+    <div>
+        <label for="up_number_of_lesson">Number of lesson</label>
+        <input type="text" id="up_number_of_lesson" name="number_of_lesson">
+    </div>
+    <div>
+        <label for="up_teacher">Teacher</label>
+        <input type="text" id="up_teacher" name="teacher">
+    </div>
+    <div>
+        <label for="up_group">Group</label>
+        <input type="text" id="up_group" name="group">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Delete</h2>
+<form action="/school/lesson?_method=DELETE" method="POST">
+    <div>
+        <label for="del_id">ID</label>
+        <input type="text" id="del_id" name="id" required>
+    </div>
+    <button type="submit">Submit</button>
+</form>
