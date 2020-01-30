@@ -1,0 +1,46 @@
+<h1>Group</h1>
+
+<p><%= message %></p>
+
+<form action="/school" method="GET">
+    <button type="submit">Go School</button>
+</form>
+
+<h2>Add</h2>
+<form action="/school/group" method="POST">
+    <div>
+        <label for="add_name">Name</label>
+        <input type="text" id="add_name" name="name" required>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Update</h2>
+<form action="/school/group?_method=PUT" method="POST">
+    <div>
+        <label for="up_id">ID</label>
+        <input type="text" id="up_id" name="id" required>
+    </div>
+    <div>
+        <label for="up_name">Name</label>
+        <input type="text" id="up_name" name="name">
+    </div>
+    <div>
+        <label for="up_student">Student ID</label>
+        <input type="text" id="up_student" name="student_id">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Delete</h2>
+<form action="/school/group?_method=DELETE" method="POST">
+    <div>
+        <label for="del_id">ID</label>
+        <input type="text" id="del_id" name="id" required>
+    </div>
+    <div>
+        <label for="del_student">Student ID</label>
+        <input type="text" id="del_student" name="student_id">
+    </div>
+    <button type="submit">Submit</button>
+</form>
